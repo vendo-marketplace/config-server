@@ -15,7 +15,7 @@ It provides HTTP, resource-based API for external configuration in a distributed
 
 # Architecture
 
-The Config Server is a foundational **Infrastructure Component**. It does not contain domain business logic, Hexagonal Architecture, or CQRS patterns.
+The Config Server is a foundational **Infrastructure Component**. It does **NOT** contain domain business logic, Hexagonal Architecture, or CQRS patterns.
 
 # Project Structure
 
@@ -35,7 +35,7 @@ This is typically the **very first service** that must be started in the Vendo p
 
 ## Dependencies
 
-- **Git Repository:** A remote Git repository containing the configuration files
+- **Git Repository:** A private remote Git repository containing the configuration files.
 
 ---
 
@@ -49,7 +49,7 @@ Or build and run:
 
 ```
 mvn clean package
-java -jar target/config_server.jar
+java -jar target/config-server.jar
 ```
 
 ---
